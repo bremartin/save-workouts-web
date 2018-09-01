@@ -10,7 +10,7 @@ block content
 
   div.form-group
     label(for='workoutType') Workout Type:
-    input#workoutType.form-control(type='text' placeholder='Workout Type')
+    input#workoutType.form-control(type='text' placeholder='Workout Type') 
 
   div.form-group
     label(for='workoutSubType') Workout Subtype:
@@ -24,6 +24,14 @@ block content
   button(type='button' class=' c-btn-blue c-btn-circle c-btn-uppercase' value=' + ' onclick=`additionalEntries()`) +
   
   div.input
-    style(display='block')
-    label(for='exercise') Exercise:
+    label(for='exercise') 
     input#exercise.form-control(type='text' placeholder='Exercise Name')
+  
+    label(for='reps') 
+    input#reps.form-control(type='text' placeholder='Reps')
+  
+    label(for='sets')
+    input#sets.form-control(type='text' placeholder='Sets')
+  
+    label(for='rest')
+    input#rest.form-control(type='text' placeholder='Rest')
