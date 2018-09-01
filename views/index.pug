@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+  //p Welcome to #{title}
+
+  div.form-group
+    label(for='userId') User:
+    input#userId.form-control(type='text' placeholder='Enter User ID')
+
+  div.form-group
+    label(for='workoutType') Workout Type:
+    input#workoutType.form-control(type='text' placeholder='Workout Type')
+
+  div.form-group
+    label(for='workoutSubType') Workout Subtype:
+    input#workoutSubtype.form-control(type='text' placeholder='Workout Subtype') 
+
+  script. 
+    var additionalEntries = function(){
+      document.querySelector("div.input").style.display='block'
+    }
+
+  button(type='button' class=' c-btn-blue c-btn-circle c-btn-uppercase' value=' + ' onclick=`additionalEntries()`) +
+  
+  div.input
+    style(display='block')
+    label(for='exercise') Exercise:
+    input#exercise.form-control(type='text' placeholder='Exercise Name')
